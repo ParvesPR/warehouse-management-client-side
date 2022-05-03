@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "2017 Audi Q3 2.0T Prestige",
+        "price": "$36,555.00",
+        "description": "The Audi Q3 subcompact crossover SUV debuted as a 2015 model, slotting below the compact Q5.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/q3_1-876x535.jpg",
+        "supplierName": "Aakil",
+        "quantity": "17"
+    },
+    {
+        "id": 2,
+        "name": "2017 Audi A4 Prestige",
+        "price": "$48,500.00",
+        "description": "The Audi A4’s 2017 redesign looks subtle at first glance, or even second. But the devil is in the details, and those details make this Audi a strong choice in a crowded class.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/a4_5-876x535.jpg",
+        "supplierName": "Askary",
+        "quantity": "19"
+    },
+    {
+        "id": 3,
+        "name": "2016 BMW X1",
+        "price": "$55,500.00",
+        "description": "The BMW X1 compact SUV received some visual changes, especially on the dashboard’s center controls, last year. A turbo-diesel xDrive28d version is available in addition to gas-powered models. The five-seat X1 competes with the Audi Q5, Acura RDX and Volvo XC60.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/x1_1-876x535.jpg",
+        "supplierName": "Azamat",
+        "quantity": "11"
+    },
+    {
+        "id": 4,
+        "name": "2017 Audi Q7 3.0T Premium Quattro",
+        "price": "$66,495.00",
+        "description": "The Q7 looks less imposing than its predecessor, with taller glass and a six-sided grille that appears both lower and squatter.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/q7_1-876x535.jpg",
+        "supplierName": "Fardan",
+        "quantity": "09"
+    },
+    {
+        "id": 5,
+        "name": "2017 Audi A7 3.0T Prestige Quattro",
+        "price": "$71,375.00",
+        "description": "A sporty sedan seating as many as 4 occupants with ease! Top features include leather upholstery, a built-in garage door transmitter, blind spot sensor, and remote keyless entry.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/a7_4-876x535.jpg",
+        "supplierName": "Alvis",
+        "quantity": "07"
+    },
+    {
+        "id": 6,
+        "name": "2017 Audi R8",
+        "price": "$206,300.00",
+        "description": "The Audi R8 came about as a production version of the Le Mans Quattro concept car. The name itself references Audi’s R8 race car that won several 24 Hours of Le Mans races and encompasses the brand’s 70-plus years of racing history.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/r8_8-876x535.jpg",
+        "supplierName": "Hugo Conroy",
+        "quantity": "05"
+    },
+    {
+        "id": 7,
+        "name": "2013 Audi A7",
+        "price": "$25,900.00",
+        "description": "2013 AUDI A7 3.0 QUATTRO TIPTRONIC PRESTIGE! $69K WINDOW STICKER! FINANCING AVAILABLE!.QUATTRO ALL WHEEL DRIVE!.AUTOMATIC TRANSMISSION!",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/b5e6bc01e6_1024-876x535.jpg",
+        "supplierName": "Favian Ronald",
+        "quantity": "25"
+    },
+    {
+        "id": 8,
+        "name": "2014 Ford F-150 Lariat",
+        "price": "$43,591.00",
+        "description": "The twelfth-generation Ford F-Series is a light-duty pickup truck produced by Ford from the 2009 to 2014 model years.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/ford_1-876x535.jpg",
+        "supplierName": "Reginald",
+        "quantity": "16"
+    },
+    {
+        "id": 9,
+        "name": "2013 Mercedes-Benz CLS",
+        "price": "$34,900.00",
+        "description": "2013 MERCEDES-BENZ CLS CLS 550 4MATIC.LOW MILES!ORIGINAL WINDOW STICKER OF $85,470!.4.7L TWIN TURBO V8 ENGINE WITH 402 HP.4 MATIC ALL WHEEL DRIVE.SPORT PACKAGE.18 INCH AMG SPORT WHEELS.REAR SPOILER!",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/8d9446aaad_1024-876x535.jpg",
+        "supplierName": "Somrat Akbar",
+        "quantity": "22"
+    },
+    {
+        "id": 10,
+        "name": "2013 Mercedes-Benz C 63 AMG",
+        "price": "$80,995.00",
+        "description": "The Mercedes-Benz C-Class is available as a coupe or sedan, in Sport or Luxury trim, and with a turbo 1.8-liter four-cylinder, new 3.0-liter V-6, or a more powerful 3.5-liter V-6.The C300 and C350 come standard with stop/start technology.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/cc-9-876x535.jpg",
+        "supplierName": "Socrates",
+        "quantity": "13"
+    },
+    {
+        "id": 11,
+        "name": "2016 BMW M3 Base",
+        "price": "$77,495.00",
+        "description": "The M3 is a high-performance version of the 3 Series sedan that was redesigned last year. It’s powered by a turbocharged six-cylinder engine that’s rated at 425 horsepower.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/m3-2_1-876x535.jpg",
+        "supplierName": "Shannon Gabriel",
+        "quantity": "18"
+    },
+    {
+        "id": 12,
+        "name": "2016 Bugatti Veyron",
+        "price": "$2,599,000.00",
+        "description": "Bugatti, originally French and now owned by Volkswagen group is oiling up its Veyron successors named as Chiron. Reports say that this all new car hypercar will do 0-100 kmph in just 2 seconds.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/bugatti_veyron_1-876x535.jpg",
+        "supplierName": "Eliyash Alomgir",
+        "quantity": "03"
+    },
+    {
+        "id": 13,
+        "name": "2017 Bentley Flying Spur",
+        "price": "$244,000.00",
+        "description": "The Bentley Continental Flying Spur is the four-door saloon variant of the Bentley Continental GT coupé. The Bentley Continental Flying Spur was introduced in 2005.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/flying-b_1-876x535.jpg",
+        "supplierName": "Abdur Khaleque",
+        "quantity": "07"
+    },
+    {
+        "id": 14,
+        "name": "2013 Cadillac CTS",
+        "price": "$21,900.00",
+        "description": "2013 CADILLAC CTS 3.6L PREMIUM SEDAN AWD! LOW MILES! FINANCING AVAILABLE!WOOD TRIM PACKAGE!REAR VIEW CAMERA!FULLY SERVICED AND READY FOR YOU!",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/a5b8b94a1e_1024-876x535.jpg",
+        "supplierName": "John Charles",
+        "quantity": "27"
+    },
+    {
+        "id": 15,
+        "name": "2013 Ferrari Enzo",
+        "price": "$289,500.00",
+        "description": "The Enzo Ferrari is a 12 cylinder mid-engine berlinetta sports car named after the company’s founder, Enzo Ferrari. It was built in 2002 using Formula One technology, such as a carbon-fiber body, F1-style electrohydraulic shift transmission.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/ferrari_enzo_1-876x535.jpg",
+        "supplierName": "Sultan Suleman",
+        "quantity": "02"
+    },
+    {
+        "id": 16,
+        "name": "2012 Ferrari 458 Italia",
+        "price": "$224,400.00",
+        "description": "That commitment has also produced the 458 Italia GT of which there are several versions – GT2, GT3 and Grand-Am – honed to suit the technical rules of the many championships in which it competes.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/ferrari_Italia_1-876x535.jpg",
+        "supplierName": "Cong-Min",
+        "quantity": "04"
+    },
+    {
+        "id": 17,
+        "name": "2015 Land Rover Range Rover Evoque",
+        "price": "$32,900.00",
+        "description": "2015 LAND ROVER RANGE ROVER EVOQUE PURE PLUS! LOW MILES! FINANCING AVAILABLE!ONLY 18K MILES!2.0L TURBO I4 ENGINE WITH 240 HP!4 WHEEL DRIVE! PANORAMIC GLASS SUNROOF!",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/2dd4e98f48_1024-876x535.jpg",
+        "supplierName": "Sonia-Michiko",
+        "quantity": "21"
+    },
+    {
+        "id": 18,
+        "name": "2016 McLaren 650S",
+        "price": "$258,800.00",
+        "description": "The 650S may look like a face-lifted 12C, but there’s a lot more to it: The revised styling pays tribute to the P1 hybrid, the body tub is lighter, and about 25 percent of the parts are new.",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/l_650S_1-876x535.jpg",
+        "supplierName": "Alberta ",
+        "quantity": "03"
+    },
+    {
+        "id": 19,
+        "name": "2009 Porsche 911 Turbo Cabriolet",
+        "price": "$94,900.00",
+        "description": "Porsche’s flagship 911 comes in more than a dozen variants, most of which have substantial mechanical upgrades for 2009.The Porsche 911 is a two-door, 2+2 high performance and one of the most powerful sports cars made since 1963 by Porsche AG of Stuttgart, Germany",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/p9_7-876x535.jpg",
+        "supplierName": "Prudence",
+        "quantity": "10"
+    },
+    {
+        "id": 20,
+        "name": "2013 Volkswagen Eos",
+        "price": "$18,900.00",
+        "description": "2013 VOLKSWAGEN EOS KOMFORT CONVERTIBLE! LOW MILES! FINANCING AVAILABLE!COMBINATION POWER HARD TOP CONVERTIBLE WITH POWER SUNROOF!AUTOMATIC TRANMISSION!2.0L TURBO I4 ENGINE WITH 200 HP!",
+        "img": "https://cardealer.potenzaglobalsolutions.com/elementor/wp-content/uploads/sites/3/2021/06/51b31d9e35_1024-876x535.jpg",
+        "supplierName": "Alfred",
+        "quantity": "31"
+    },
+]
