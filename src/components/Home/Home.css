@@ -1,0 +1,46 @@
+.banner {
+    background: url(../../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+.title-one {
+    font-size: 3rem;
+    line-height: 20px;
+}
+
+.title-two {
+    font-size: 5.3rem;
+}
+
+.banner-btn {
+    width: 150px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+/* use media query */
+@media only screen and (max-width:680px) {
+    .sub-title {
+        font-size: 1.2rem;
+    }
+
+    .title-one {
+        font-size: 1.7rem;
+    }
+
+    .title-two {
+        font-size: 3rem;
+    }
+
+    .banner-btn {
+        width: 90px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+}
