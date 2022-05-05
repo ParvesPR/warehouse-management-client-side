@@ -13,9 +13,11 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-space-around'>
-                        <Nav className="me-auto ">
+                        <Nav className="me-auto">
                             <Nav.Link className='text-white' as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link className='text-white' as={Link} to="/products">Products</Nav.Link>
+                            <Nav.Link className='text-white' as={Link} to="/inventory">Inventory</Nav.Link>
+                            <Nav.Link className='text-white' as={Link} to="/additem">Add Item</Nav.Link>
+                            <Nav.Link className='text-white' as={Link} to="/myitems">My Items</Nav.Link>
                             
                         </Nav>
                         <Nav className="ms-auto ">
