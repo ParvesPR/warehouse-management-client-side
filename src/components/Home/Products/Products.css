@@ -1,0 +1,23 @@
+.product-section {
+    background: url(https://img.wallpapersafari.com/desktop/1600/900/77/80/lBpfjq.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* use media query */
+@media only screen and (max-width:680px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}

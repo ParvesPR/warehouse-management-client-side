@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.css';
+import Products from './Products/Products';
 
 const Home = () => {
     return (
-        <div className='banner-container col-lg-12'>
+        <div className='banner-container'>
             <div className='col-lg-12 h-auto banner'>
                 <div className='col-lg-12 text-white p-5'>
                     <p className='text-success text-uppercase fw-bold mb-4
@@ -11,8 +12,9 @@ const Home = () => {
                 <h1 className='text-uppercase title-one mb-0'>Modern-Classic</h1>
                 <h1 className='text-uppercase title-two'>Decorate</h1>
                 </div>
-                <button className='btn btn-outline-danger banner-btn'>Inventory</button>
+                <button className='btn btn-outline-danger banner-btn text-white py-2'>Book Appoinment</button>
             </div>
+            <Products></Products>
         </div>
     );
 };

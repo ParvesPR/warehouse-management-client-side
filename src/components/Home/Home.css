@@ -19,7 +19,7 @@
 }
 
 .banner-btn {
-    width: 150px;
+    width: 200px;
     margin-left: 50px;
     margin-bottom: 100px;
 }
@@ -39,7 +39,8 @@
     }
 
     .banner-btn {
-        width: 90px;
+        width: 160px;
+        font-size: .7rem;
         margin-left: 50px;
         margin-bottom: 50px;
     }
