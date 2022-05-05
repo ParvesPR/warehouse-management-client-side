@@ -13,8 +13,8 @@ const Products = () => {
 
     return (
         <div>
-            <div className='product-section py-5'>
-                <h2 className='text-uppercase text-center py-3 fw-bolder text-white'>Top Brands</h2>
+            <div className='section py-5'>
+                <h2 className='text-uppercase text-center py-3 fw-bolder text-white'>Top Brands : <span className='text-light'>{products.length}</span></h2>
                     <div className='product-container mx-3'>
                     {
                     products.map(product => <Product
