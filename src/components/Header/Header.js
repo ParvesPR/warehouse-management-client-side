@@ -15,14 +15,14 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-space-around'>
                         <Nav className="me-auto">
                             <Nav.Link className='text-white' as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link className='text-white' as={Link} to="/inventory">Inventory</Nav.Link>
+                            <Nav.Link className='text-white' as={Link} to="/inventory">Manage Inventory</Nav.Link>
                             <Nav.Link className='text-white' as={Link} to="/additem">Add Item</Nav.Link>
                             <Nav.Link className='text-white' as={Link} to="/myitems">My Items</Nav.Link>
                             
                         </Nav>
                         <Nav className="ms-auto ">
-                        <Nav.Link className='text-white' as={Link} to="/portfolio">Blog</Nav.Link>
-                        <Nav.Link className='text-white' as={Link} to="/portfolio">Login</Nav.Link>
+                        <Nav.Link className='text-white' as={Link} to="/blog">Blog</Nav.Link>
+                        <Nav.Link className='text-white' as={Link} to="/login">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

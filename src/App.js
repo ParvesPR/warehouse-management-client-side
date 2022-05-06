@@ -5,6 +5,9 @@ import Home from './components/Home/Home';
 import Products from './components/Home/Products/Products';
 import Inventory from './components/Inventory/Inventory';
 import ItemDetails from './components/ItemDetails/ItemDetails';
+import Login from './components/Header/Login/Login';
+import MyItems from './components/MyItems/MyItems';
+import AddItems from './components/AddItems/AddItems';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/inventory/:productId' element={<ItemDetails></ItemDetails>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+        <Route path='/additem' element={<AddItems></AddItems>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
     </div>
   );
