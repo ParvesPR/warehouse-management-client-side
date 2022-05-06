@@ -22,7 +22,7 @@ const Header = () => {
                         </Nav>
                         <Nav className="ms-auto ">
                         <Nav.Link className='text-white' as={Link} to="/blog">Blog</Nav.Link>
-                        <Nav.Link className='text-white' as={Link} to="/login">Login</Nav.Link>
+                        <Nav.Link className='text-white btn btn-outline-danger rounded-pill' as={Link} to="/login">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
