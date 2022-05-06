@@ -33,3 +33,11 @@
     background: transparent;
     color: white;
 }
+.divider1{
+    border: 1px solid #ddd;
+    height: 1px;
+}
+.divider2{
+    border: 1px solid #ddd;
+    height: 1px;
+}

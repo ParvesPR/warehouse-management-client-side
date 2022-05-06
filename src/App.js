@@ -8,6 +8,7 @@ import ItemDetails from './components/ItemDetails/ItemDetails';
 import Login from './components/Header/Login/Login';
 import MyItems from './components/MyItems/MyItems';
 import AddItems from './components/AddItems/AddItems';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
         <Route path='/additem' element={<AddItems></AddItems>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<SignUp></SignUp>}></Route>
       </Routes>
     </div>
   );
