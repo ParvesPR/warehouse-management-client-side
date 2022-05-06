@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 
 
 const SignUp = () => {
@@ -12,13 +13,17 @@ const SignUp = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    let from = location.state?.from?.pathname || "/";
-    
-
     const [
         createUserWithEmailAndPassword,
-        user
+        user,
+        loading
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    let from = location.state?.from?.pathname || "/";
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -26,7 +31,6 @@ const SignUp = () => {
 
     const handleEmail = event => {
         setEmail(event.target.value);
-        console.log('clicked')
     };
 
     const handlePassword = event => {
@@ -38,6 +42,7 @@ const SignUp = () => {
 
     const handleCreateUser = event => {
         event.preventDefault();
+        const userName = event.target.name.value
         if (password !== confirm) {
             setError('Password did not match')
             return;
@@ -46,7 +51,9 @@ const SignUp = () => {
             setError('Password must be more than 6 characters');
             return;
         };
-        createUserWithEmailAndPassword(email, password)
+        createUserWithEmailAndPassword(email, password);
+
+
     }
 
     return (
