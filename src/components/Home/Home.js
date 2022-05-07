@@ -12,7 +12,7 @@ const Home = () => {
                 <h1 className='text-uppercase title-one mb-0'>Modern-Classic</h1>
                 <h1 className='text-uppercase title-two'>Decorate</h1>
                 </div>
-                <button className='btn btn-outline-danger banner-btn text-white py-2'>Book Appoinment</button>
+                <button className='btn btn-outline-danger banner-btn text-white py-2'>Book Appointment</button>
             </div>
             <Products></Products>
         </div>

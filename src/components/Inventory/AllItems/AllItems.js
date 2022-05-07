@@ -19,7 +19,11 @@ const AllItems = ({ product }) => {
                     <p className='mb-1'>Supplier: <span className='text-info fw-bold'>{supplierName}</span></p>
                     <p className='mb-1'>Available Stock: <span className='text-danger fw-bold'>{quantity}</span></p>
                 </div>
-                <button onClick={() => navigateToItemDetails(_id)} className='btn btn-outline-danger w-50 mx-auto text-white mx-3 mt-0 mb-4'>Update</button>
+                <div className='d-flex justify-align-content-around'>
+                <button onClick={() => navigateToItemDetails(_id)} className='btn btn-outline-danger w-25 mx-auto text-white mx-3 mt-0 mb-4'>Update</button>
+                <button className='btn btn-outline-warning w-25 mx-auto text-white mx-3 mt-0 mb-4'>Delete</button>
+                <button className='btn btn-outline-primary w-25 mx-auto text-white mx-3 mt-0 mb-4'>Add Item</button>
+                </div>
             </div>
         </div>
     );
