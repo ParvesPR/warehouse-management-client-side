@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 import GoogleSignIn from '../Header/Login/GoogleSignIn/GoogleSignIn';
@@ -19,10 +19,9 @@ const SignUp = () => {
         user,
         loading
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     let from = location.state?.from?.pathname || "/";
-    if (loading || updating) {
+    if (loading) {
         return <Loading></Loading>
     }
 
@@ -43,7 +42,6 @@ const SignUp = () => {
 
     const handleCreateUser = event => {
         event.preventDefault();
-        const userName = event.target.name.value
         if (password !== confirm) {
             setError('Password did not match')
             return;

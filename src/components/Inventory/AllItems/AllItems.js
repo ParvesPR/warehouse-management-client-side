@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const AllItems = ({ product }) => {
     const { _id, name, price, description, img, supplierName, quantity } = product;
@@ -22,7 +22,7 @@ const AllItems = ({ product }) => {
                 <div className='d-flex justify-align-content-around'>
                 <button onClick={() => navigateToItemDetails(_id)} className='btn btn-outline-danger w-25 mx-auto text-white mx-3 mt-0 mb-4'>Update</button>
                 <button className='btn btn-outline-warning w-25 mx-auto text-white mx-3 mt-0 mb-4'>Delete</button>
-                <button className='btn btn-outline-primary w-25 mx-auto text-white mx-3 mt-0 mb-4'>Add Item</button>
+                <button className='btn btn-outline-info w-25 mx-auto text-white mx-3 mt-0 mb-4'><Link className='text-decoration-none' to="/additem">Add Item</Link></button>
                 </div>
             </div>
         </div>
