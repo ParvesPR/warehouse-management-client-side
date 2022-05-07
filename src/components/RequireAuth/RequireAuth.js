@@ -7,7 +7,7 @@ import Loading from '../Loading/Loading';
 
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const [sendEmailVerification,sending] = useSendEmailVerification(auth);
     const location = useLocation();
 
     if (loading) {
@@ -19,11 +19,13 @@ const RequireAuth = ({ children }) => {
     };
 
     if (!user.emailVerified) {
-        return <div className='text-center mt-5'>
-            <h4 className='text-danger'>Email is not verified!!</h4>
-            <h5 className='text-success'> Please Verify your email</h5>
+        return <div className='text-center mt-5 py-5 section'>
+           <div>
+           <h4 className='text-danger'>Email is not verified!!</h4>
+            <h5 className='text-white'> Please Verify your email</h5>
+           </div>
             <button
-            className='btn btn-primary'
+            className='btn btn-outline-warning'
                 onClick={async () => {
                     await sendEmailVerification();
                     toast('Verification email sending');
