@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
+import GoogleSignIn from '../Header/Login/GoogleSignIn/GoogleSignIn';
 
 
 const SignUp = () => {
@@ -67,16 +68,9 @@ const SignUp = () => {
                     <input onBlur={handleConfirm} className='form-control mb-3' type="text" name="confirm" placeholder='Confirm Password' required />
                     <p className='show-error-msg text-danger'>{error}</p>
                     <input className='form-control btn btn-info' type="submit" value="Submit" />
-                    <p className='text-white py-2'>Already have an account? <Link className='text-decoration-none' to="/login">Login</Link></p>
-                    <div className='d-flex align-items-center text-center'>
-                        <p className='w-50 me-2 divider1 mx-auto'></p>
-                        <p className='text-white mx-3 mx-auto'>or</p>
-                        <p className='w-50 ms-2 divider2 mx-auto'></p>
-                    </div>
-                    <div className='mx-auto text-center'>
-                        <button className='w-100 btn btn-outline-light submit-btn'>Continue with Google</button>
-                    </div>
+                    <p className='text-white py-2'>Already have an account? <Link className='text-decoration-none text-info' to="/login">Login</Link></p>
                 </form>
+                <GoogleSignIn></GoogleSignIn>
             </div>
         </div>
     );

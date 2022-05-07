@@ -1,5 +1,5 @@
 .login-section {
-    background: linear-gradient(#00000059, #00000059), url(https://1.bp.blogspot.com/-k3rtzfw-l4I/YU0SLCYg3BI/AAAAAAAABuw/Tq4H0_oSUg8NrGJAOyefbwP81v9EXrMmwCLcBGAsYHQ/s16000/Screenshot%2B%2528797%2529.jpg) no-repeat;
+    background: linear-gradient(#00000070, #00000070), url(https://1.bp.blogspot.com/-k3rtzfw-l4I/YU0SLCYg3BI/AAAAAAAABuw/Tq4H0_oSUg8NrGJAOyefbwP81v9EXrMmwCLcBGAsYHQ/s16000/Screenshot%2B%2528797%2529.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -32,12 +32,4 @@
 .input-container input:focus{
     background: transparent;
     color: white;
-}
-.divider1{
-    border: 1px solid #ddd;
-    height: 1px;
-}
-.divider2{
-    border: 1px solid #ddd;
-    height: 1px;
 }
