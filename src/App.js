@@ -12,6 +12,7 @@ import MyItems from './components/MyItems/MyItems';
 import AddItems from './components/AddItems/AddItems';
 import SignUp from './components/SignUp/SignUp';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='/register' element={<SignUp></SignUp>}></Route>
       </Routes>
       <ToastContainer />
+      <Toaster/>
     </div>
   );
 }

@@ -56,8 +56,8 @@ const Login = () => {
             <div className='mt-5 py-5 login-container col-sm-8 col-lg-4 mx-auto '>
                 <form onSubmit={handleSingIn} className='input-container'>
                     <h2 className='text-center text-white'>Login Here</h2>
-                    <input className='form-control mb-3' ref={emailRef} type="text" name="email" placeholder='Email' />
-                    <input className='form-control mb-3' ref={passwordRef} type="text" name="password" placeholder='Password' />
+                    <input className='form-control mb-3' ref={emailRef} type="text" name="email" placeholder='Email' required/>
+                    <input className='form-control mb-3' ref={passwordRef} type="text" name="password" placeholder='Password' required/>
                     <input className='form-control btn btn-info' type="submit" value="Submit" />
                     {errorMsg}
                     <p className='mb-0 text-white py-2'>Don't have an account? <Link className='text-decoration-none' to="/register">Create Account</Link></p>
