@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                     <p className="card-text">{description}</p>
                     <p className='mb-1'>Price: <span className='text-warning fw-bold'>{price}</span></p>
                     <p className='mb-1'>Supplier: <span className='text-info fw-bold'>{supplierName}</span></p>
-                    <p className='mb-1'>Available Stock: <span className='text-danger fw-bold'>{quantity}</span></p>
+                    <p className='mb-1'>Available Stock: <span className='text-danger fw-bold'>{quantity?quantity:'Out of Stock'}</span></p>
                 </div>
                 <button onClick={() => navigateToItemDetails(_id)} className='btn btn-outline-danger w-50 mx-auto text-white mx-3 mt-0 mb-4'>Update</button>
             </div>

@@ -1,0 +1,8 @@
+.stock input{
+    background: transparent;
+    color: white;
+}
+.stock input:focus{
+    background: transparent;
+    color: white;
+}
