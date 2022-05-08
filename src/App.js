@@ -36,13 +36,21 @@ function App() {
             <Products></Products>
           </RequireAuth>
         }></Route>
-        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
-        <Route path='/additem' element={<AddItems></AddItems>}></Route>
+        <Route path='/myitems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
+        <Route path='/additem' element={
+          <RequireAuth>
+            <AddItems></AddItems>
+          </RequireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<SignUp></SignUp>}></Route>
       </Routes>
       <ToastContainer />
-      <Toaster/>
+      <Toaster />
     </div>
   );
 }
