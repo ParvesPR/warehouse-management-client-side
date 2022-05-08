@@ -16,12 +16,12 @@ const AddItems = () => {
         })
             .then(res => res.json())
             .then(result => {
-                if(result.insertedId){
+                if (result.insertedId) {
                     toast.success('Item added Successfully')
                 }
             })
-
-
+        // eslint-disable-next-line no-restricted-globals
+        event.target.reset();
     }
     return (
         <div className='mt-5 py-5 mx-auto login-section'>
