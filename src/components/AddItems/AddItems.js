@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 const AddItems = () => {
     const { register, handleSubmit } = useForm();
@@ -15,7 +16,9 @@ const AddItems = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                if(result.insertedId){
+                    toast.success('Item added Successfully')
+                }
             })
 
 
