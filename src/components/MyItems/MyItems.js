@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
@@ -11,7 +12,7 @@ const MyItems = () => {
         const getItems = async () => {
             const email = user?.email;
             const url = `http://localhost:5000/myitems?email=${email}`;
-            const { data } = await axios.get(url)
+            const { data } = await axios.get(url,)
             setItems(data)
         }
         getItems();
@@ -23,7 +24,27 @@ const MyItems = () => {
         <div className='mt-5 py-5 container-fluid'>
             <h1>My Items: {items.length}</h1>
             {
-                items.map(item => console.log(item.name))
+                items.map(item =>
+                    <Table striped bordered hover variant="dark">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>User Name</th>
+                                <th>Item Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>{item.name}</td>
+                                <td>{item.price}</td>
+                                <td>@{item.quantity}</td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+                )
             }
         </div>
     );

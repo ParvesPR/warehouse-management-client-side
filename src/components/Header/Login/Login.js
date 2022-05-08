@@ -6,7 +6,6 @@ import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
 import { toast } from 'react-toastify';
 import GoogleSignIn from './GoogleSignIn/GoogleSignIn';
-import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -34,15 +33,11 @@ const Login = () => {
     if (error) {
         errorMsg = <p className='text-danger fw-bold'>Error:{error?.message}</p>
     }
-    const handleSingIn = async (event) => {
+    const handleSingIn = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('http://localhost:5000/login', { email });
-        localStorage.setItem('accessToken', data.accessToken);
-        console.log(data);
-        navigate(from, { replace: true });
+        signInWithEmailAndPassword(email, password);
     };
 
     const resetPassword = async () => {
@@ -61,8 +56,8 @@ const Login = () => {
             <div className='mt-5 py-5 login-container col-sm-8 col-lg-4 mx-auto '>
                 <form onSubmit={handleSingIn} className='input-container'>
                     <h2 className='text-center text-white'>Login Here</h2>
-                    <input className='form-control mb-3' ref={emailRef} type="text" name="email" placeholder='Email' required />
-                    <input className='form-control mb-3' ref={passwordRef} type="text" name="password" placeholder='Password' required />
+                    <input className='form-control mb-3' ref={emailRef} type="text" name="email" placeholder='Email' required/>
+                    <input className='form-control mb-3' ref={passwordRef} type="text" name="password" placeholder='Password' required/>
                     <input className='form-control btn btn-info' type="submit" value="Submit" />
                     {errorMsg}
                     <p className='mb-0 text-white py-2'>Don't have an account? <Link className='text-decoration-none' to="/register">Create Account</Link></p>
