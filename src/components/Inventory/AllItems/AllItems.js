@@ -1,10 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
-import useItem from '../../../hooks/useItem/useItem';
 
-const AllItems = ({ product }) => {
+const AllItems = ({ product, load, setLoad }) => {
     const { _id, name, price, description, img, supplierName, quantity } = product;
     const navigate = useNavigate();
-    const [products, setProducts] = useItem();
     const navigateToItemDetails = id => {
         navigate(`/inventory/${id}`)
     }
@@ -19,8 +17,7 @@ const AllItems = ({ product }) => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    const remaining = products.filter(pd => pd._id !== id);
-                    setProducts(remaining);
+                    setLoad(!load)
                 })
         }
     }
@@ -32,8 +29,8 @@ const AllItems = ({ product }) => {
                     <h4 className="card-title">{name}</h4>
                     <p className="card-text">{description}</p>
                     <p className='mb-1'>Price: <span className='text-warning fw-bold'>{price}</span></p>
-                    <p className='mb-1'>Supplier: <span className='text-info fw-bold'>{supplierName}</span></p>
-                    <p className='mb-1'>Available Stock: <span className='text-danger fw-bold'>{quantity}</span></p>
+                    <p className='mb-1'>Supplier: <span className='text-info fw-bold'>{supplierName ? supplierName : 'N/A'}</span></p>
+                    <p className='mb-1'>Available Stock: <span className='text-danger fw-bold'>{quantity ? quantity : 'Out of Stock'}</span></p>
                 </div>
                 <div className='d-flex justify-align-content-around'>
                     <button onClick={() => navigateToItemDetails(_id)} className='btn btn-outline-danger w-25 mx-auto text-white mx-3 mt-0 mb-4'>Update</button>
