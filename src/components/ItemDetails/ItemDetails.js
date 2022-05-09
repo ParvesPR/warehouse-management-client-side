@@ -13,7 +13,7 @@ const ItemDetails = () => {
     useEffect(() => {
 
         const getItemById = async () => {
-            const url = `http://localhost:5000/inventory/${productId}`;
+            const url = `https://blooming-lowlands-09292.herokuapp.com/inventory/${productId}`;
             const { data } = await axios.get(url);
             setItems(data)
         }
@@ -24,7 +24,7 @@ const ItemDetails = () => {
     const handleDelivered = (id) => {
         const getQuantity = async () => {
             const newUpdate = { quantity }
-            const url = `http://localhost:5000/delivered/${_id}`
+            const url = `https://blooming-lowlands-09292.herokuapp.com/delivered/${_id}`
             const { data } = await axios.put(url, newUpdate)
             console.log(data)
             if (data.modifiedCount) {
@@ -42,7 +42,7 @@ const ItemDetails = () => {
         if (getQuantity >= 1) {
             const newQuantity = parseInt(getQuantity) + parseInt(quantity);
 
-            const url = `http://localhost:5000/addtostock/${productId}`;
+            const url = `https://blooming-lowlands-09292.herokuapp.com/addtostock/${productId}`;
             const { data } = await axios.put(url, { newQuantity });
 
             if (data.modifiedCount === 1 || data.matchedCount === 1) {

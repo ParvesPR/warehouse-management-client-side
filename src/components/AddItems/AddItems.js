@@ -9,7 +9,7 @@ const AddItems = () => {
     const [user] = useAuthState(auth)
 
     const handleAddItem = data => {
-        const url = 'http://localhost:5000/inventory';
+        const url = 'https://blooming-lowlands-09292.herokuapp.com/inventory';
         fetch(url, {
             method: 'POST',
             headers: {

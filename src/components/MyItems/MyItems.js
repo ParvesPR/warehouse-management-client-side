@@ -13,7 +13,7 @@ const MyItems = () => {
 
         const getItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/myitems?email=${email}`;
+            const url = `https://blooming-lowlands-09292.herokuapp.com/myitems?email=${email}`;
             const { data } = await axios.get(url, {
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -31,7 +31,7 @@ const MyItems = () => {
     const handleDelete = product => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/myitems/${product}`;
+            const url = `https://blooming-lowlands-09292.herokuapp.com/myitems/${product}`;
             fetch(url, {
                 method: 'DELETE'
             })

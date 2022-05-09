@@ -7,7 +7,7 @@ const Inventory = () => {
     const [load, setLoad] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/inventory')
+        fetch('https://blooming-lowlands-09292.herokuapp.com/inventory')
             .then(res => res.json())
             .then(data => setInventory(data))
     }, [load]);
