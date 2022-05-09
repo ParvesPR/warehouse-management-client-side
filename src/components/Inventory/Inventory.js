@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import AllItems from './AllItems/AllItems';
 
 const Inventory = () => {
@@ -12,6 +13,7 @@ const Inventory = () => {
     }, [load]);
     return (
         <div>
+            <Header></Header>
             <div className='section py-5 mt-5'>
                 <h2 className='text-uppercase text-center py-3 fw-bolder text-white'>Available Items: <span className='text-danger fw-bold'>{inventory.length}</span></h2>
                 <div className='product-container mx-3'>

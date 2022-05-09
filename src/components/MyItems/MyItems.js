@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Header from '../Header/Header';
 import './MyItems.css';
 
 const MyItems = () => {
@@ -37,6 +38,7 @@ const MyItems = () => {
 
     return (
         <div className='mt-5 py-5 container-fluid'>
+            <Header></Header>
             <h1>My Items: {items.length}</h1>
             {
                 items.map(item =>

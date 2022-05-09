@@ -1,9 +1,11 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import Header from '../Header/Header';
 
 const Blog = () => {
     return (
         <div className='mt-5 mx-3 py-5 bg-light'>
+            <Header></Header>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header> Difference between JavaScrip vs nodeJs.</Accordion.Header>

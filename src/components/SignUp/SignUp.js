@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 import GoogleSignIn from '../Header/Login/GoogleSignIn/GoogleSignIn';
+import Header from '../Header/Header';
 
 
 const SignUp = () => {
@@ -57,6 +58,7 @@ const SignUp = () => {
 
     return (
         <div className='login-section'>
+            <Header></Header>
             <div className='mt-5 py-5 login-container col-lg-4 mx-auto '>
                 <form onSubmit={handleCreateUser} className='input-container'>
                     <h2 className='text-center text-white'>Create Account</h2>

@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
 import { toast } from 'react-toastify';
 import GoogleSignIn from './GoogleSignIn/GoogleSignIn';
+import Header from '../Header';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -53,6 +54,7 @@ const Login = () => {
 
     return (
         <div className='login-section'>
+            <Header></Header>
             <div className='mt-5 py-5 login-container col-sm-8 col-lg-4 mx-auto '>
                 <form onSubmit={handleSingIn} className='input-container'>
                     <h2 className='text-center text-white'>Login Here</h2>

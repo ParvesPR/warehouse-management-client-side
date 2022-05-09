@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+import Header from '../../Header/Header';
 
 const AllItems = ({ product, load, setLoad }) => {
     const { _id, name, price, description, img, supplierName, quantity } = product;
@@ -23,6 +24,7 @@ const AllItems = ({ product, load, setLoad }) => {
     }
     return (
         <div className='card-container'>
+            <Header></Header>
             <div className="card h-100 bg-dark text-white border-danger">
                 <img src={img} className="card-img-top card-image" alt="..." />
                 <div className="card-body">

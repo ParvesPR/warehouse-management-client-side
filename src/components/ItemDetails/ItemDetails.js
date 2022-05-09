@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useParams } from 'react-router-dom';
+import Header from '../Header/Header';
 import './ItemDetails.css';
 
 const ItemDetails = () => {
@@ -55,6 +56,7 @@ const ItemDetails = () => {
 
     return (
         <div className='mt-5 py-5 section h-auto'>
+            <Header></Header>
             <h2 className='text-center text-light my-4'> <span className='text-info bg-gradient p-2 rounded-3'>Car Details: {name}</span></h2>
 
             <div className='card-container col-lg-6 mx-3 mx-lg-auto'>
