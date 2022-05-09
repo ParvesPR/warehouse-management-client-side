@@ -14,6 +14,7 @@ import RequireAuth from './components/RequireAuth/RequireAuth';
 import { Toaster } from 'react-hot-toast';
 import Blog from './components/Blog/Blog';
 import NotFound from './components/NotFound/NotFound';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<SignUp></SignUp>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
