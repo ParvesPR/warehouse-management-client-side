@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 const About = () => {
     return (
-        <div className='container'>
+        <div className='container mt-5 py-5'>
             <Header></Header>
             <h1 className='text-center'>TERMS AND CONDITIONS</h1>
             Last updated: 2022-05-09
