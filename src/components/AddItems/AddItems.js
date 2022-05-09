@@ -9,7 +9,6 @@ const AddItems = () => {
     const [user] = useAuthState(auth)
 
     const handleAddItem = data => {
-        console.log(data)
         const url = 'http://localhost:5000/inventory';
         fetch(url, {
             method: 'POST',

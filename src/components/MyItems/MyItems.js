@@ -14,13 +14,19 @@ const MyItems = () => {
         const getItems = async () => {
             const email = user?.email;
             const url = `http://localhost:5000/myitems?email=${email}`;
-            const { data } = await axios.get(url,)
+            const { data } = await axios.get(url, {
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
             setItems(data)
+            console.log(data)
         }
         getItems();
 
 
-    }, [user]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [items]);
 
     const handleDelete = product => {
         const proceed = window.confirm('Are you sure you want to delete?');

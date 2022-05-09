@@ -7,6 +7,7 @@ import Loading from '../../Loading/Loading';
 import { toast } from 'react-toastify';
 import GoogleSignIn from './GoogleSignIn/GoogleSignIn';
 import Header from '../Header';
+import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -34,11 +35,15 @@ const Login = () => {
     if (error) {
         errorMsg = <p className='text-danger fw-bold'>Error:{error?.message}</p>
     }
-    const handleSingIn = event => {
+    const handleSingIn =async(event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password);
+       await signInWithEmailAndPassword(email, password);
+        const {data} = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        console.log(data);
+        navigate(from, { replace: true });
     };
 
     const resetPassword = async () => {
